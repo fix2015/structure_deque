@@ -55,3 +55,25 @@ class Deque {
         return this.items.length === 0;
     }
 }
+
+// Initialize the deque
+const deque = new Deque();
+
+// Insert elements at the front and back
+deque.insertFront(10);
+deque.insertBack(20);
+deque.insertFront(5);
+
+// Peek at the front and back elements
+console.log(deque.peekFront()); // Output: 5
+console.log(deque.peekBack());  // Output: 20
+
+// Remove elements from the front and back
+console.log(deque.removeFront()); // Output: 5
+console.log(deque.removeBack());  // Output: 20
+
+// Get the size of the deque
+console.log(deque.size()); // Output: 1
+
+// Check if the deque is empty
+console.log(deque.isEmpty()); // Output: false
